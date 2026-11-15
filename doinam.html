@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đổi năm âm lịch</title>
+</head>
+<body>
+    <h2>Đổi năm dương lịch sang âm lịch</h2>
+
+    <script>
+        let nam = Number(prompt("Nhập năm dương lịch:"));
+
+        let can = [
+            "Canh", "Tân", "Nhâm", "Quý", "Giáp",
+            "Ất", "Bính", "Đinh", "Mậu", "Kỷ"
+        ];
+
+        let chi = [
+            "Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu",
+            "Dần", "Mão", "Thìn", "Tỵ", "Ngọ", "Mùi"
+        ];
+
+        let thiencan = can[nam % 10];
+        let diachi = chi[nam % 12];
+
+        document.write("Năm âm lịch: " + thiencan + " " + diachi);
+    </script>
+</body>
+</html>
